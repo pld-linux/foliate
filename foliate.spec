@@ -25,6 +25,7 @@ Requires:	gtk4 >= 4.12
 Requires:	hicolor-icon-theme
 Requires:	libadwaita >= 1.7
 Suggests:	speech-dispatcher
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
