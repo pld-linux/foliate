@@ -3,7 +3,7 @@ Summary:	Read books in style
 Summary(pl.UTF-8):	Stylowe czytanie książek
 Name:		foliate
 Version:	3.3.0
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications
 #Source0Download: https://github.com/johnfactotum/foliate/releases
