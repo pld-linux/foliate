@@ -3,7 +3,7 @@ Summary:	Read books in style
 Summary(pl.UTF-8):	Stylowe czytanie książek
 Name:		foliate
 Version:	3.3.0
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		X11/Applications
 #Source0Download: https://github.com/johnfactotum/foliate/releases
@@ -48,7 +48,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %meson_install
 
+# unify dir names
 %{__mv} $RPM_BUILD_ROOT%{_localedir}/{fa_IR,fa}
+# not supported by glibc (as of 2.42)
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/ie
 
 %find_lang com.github.johnfactotum.Foliate
 
